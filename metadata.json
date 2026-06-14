@@ -1,0 +1,6 @@
+{
+  "name": "Car Service Chatbot",
+  "description": "A luxury car service center chatbot web application featuring automated booking assistance, an OTP-secured Admin Area, email dispatch logging, and diagnostic telematics previews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #dc2626;
+  --color-secondary: #1a1a1a;
+  --color-surface-container: #0e0e0e;
+  --color-surface-container-high: #121212;
+  --color-surface-container-highest: #161616;
+  --color-surface-container-low: #0a0a0a;
+  --color-surface-container-lowest: #050505;
+  --color-on-surface: #e5e5e5;
+  --color-on-surface-variant: #a3a3a3;
+  --color-outline: #525252;
+  --color-outline-variant: #262626;
+  --color-background-custom: #0a0a0a;
+}
+
+body {
+  background-color: #0a0a0a;
+  font-family: 'Inter', sans-serif;
+  color: #d4d4d8;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.user-bubble {
+  background: #dc2626;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.pulse-glow {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
